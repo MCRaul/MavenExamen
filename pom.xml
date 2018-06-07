@@ -2,17 +2,24 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 		http://maven.apache.org/maven-v4_0_0.xsd">
-		
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>clinic.programmming</groupId>
-  <artifactId>maven-quick-start</artifactId>
+  <artifactId>examen-maven</artifactId>
   <version>1.0</version>
+
+	<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin -->
+	<dependency>
+	    <groupId>org.eclipse.jetty</groupId>
+	    <artifactId>jetty-maven-plugin</artifactId>
+	    <version>9.4.10.v20180503</version>
+	</dependency>
 
 	<build>
      <plugins>
        <plugin>
          <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-compiler-plugin</artifactId>
+         <artifactId>maven-archetype-webapp</artifactId>
          <version>3.7.0</version>
          <configuration>
            <source>1.8</source>
